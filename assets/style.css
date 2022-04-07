@@ -1,0 +1,61 @@
+:root{
+    --bg-color: #ffefd5;
+    --text-color: #000;
+    --card-bg-color: #f0f8ff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 100vh;
+    background-color: var(--bg-color);
+}
+
+h1{
+    font-family: Arial;
+    font-weight: 800;
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: var(--text-color);
+}
+
+.game{
+    display: flex;
+    flex-wrap: wrap;
+    height: 640px;
+    width: 640px;
+    margin: auto;
+    perspective: 1000px;
+}
+
+.card{
+    position: relative;
+    margin: 5px;
+    height: calc(33.333% - 10px);
+    width: calc(25% - 10px);
+    cursor: pointer;
+    transform: scale(1);
+}
+
+.card-front, 
+.card-back{
+    position: absolute;
+    right: 0;
+    border-radius: 15px;
+    background-color: var(--card-bg-color);
+    width: 100%;
+    margin: 5px;
+    padding: 5px;
+}
+
+.card:active{
+    transform: scale(0.97);
+    transition: transform .3s;
+}
