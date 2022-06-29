@@ -1,6 +1,6 @@
 :root {
     --bg-color: #a191ff;
-    --text-color: #000;
+    --text-color: #0cd689;
     --card-bg-color: #fff;
 }
 
@@ -8,7 +8,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial;
+    font-family: Verdana, sans-serif;
 }
 
 body {
@@ -21,14 +21,14 @@ body {
 }
 
 header {
-    margin: 10px 0;
+    margin: 1rem 0;
 }
 
 h1 {
     color: var(--text-color);
-    font-size: 40px;
-    font-weight: 800;
-    margin-bottom: 10px;
+    font-size: 3.5rem;
+    text-shadow: -2px -3px var(--card-bg-color);
+    text-transform: uppercase;
 }
 
 .game {
@@ -73,22 +73,22 @@ h1 {
 }
 
 footer {
-    background-color: var(--card-bg-color);
+    color: var(--card-bg-color);
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    gap: 1rem;
     height: 50px;
     width: 100%;
 }
 
 footer a {
-    color: var(--text-color);
+    color: var(--card-bg-color);
     text-decoration: none;
 }
 
 footer a:hover {
-    color: var(--bg-color);
+    color: var(--text-color);
     font-size: 18px;
 }
 
